@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="600.0" style="-fx-background-color: #9FC5BB;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="U3_4.PuntoVenta">
+   <children>
+      <Pane fx:id="contenedor" layoutX="-7.0" layoutY="25.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #9FC5BB;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <MenuBar layoutX="10.0" layoutY="10.0" prefWidth="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Cerrar">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#salir" text="Salir" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Menu">
+               <items>
+                  <Menu mnemonicParsing="false" text="Proveedores">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#crearProveedor" text="Nuevo Proveedor" />
+                        <MenuItem mnemonicParsing="false" onAction="#editarProveedor" text="Modificar Proveedor" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Productos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#crearProducto" text="Nuevo Producto" />
+                        <MenuItem mnemonicParsing="false" onAction="#editarProducto" text="Modificar Producto" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Clientes">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#crearCliente" text="Crear Cliente" />
+                        <MenuItem mnemonicParsing="false" onAction="#editarCliente" text="Modificar Cliente" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Existencias">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#crearExistencia" text="Crear Exitencia" />
+                        <MenuItem mnemonicParsing="false" onAction="#editarExintencia" text="Modificar Existencia" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Ventas">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#crearVenta" text="Nueva Venta" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#acercaDe" text="Acerca de..." />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
